@@ -75,6 +75,20 @@ section{padding:64px 0;border-top:1px solid var(--line)}
 .list .row .t{font-weight:500;font-size:16px}
 .list .row .v{color:var(--muted);font-size:13.5px;white-space:nowrap;font-style:italic}
 
+.videos{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:780px){.videos{grid-template-columns:1fr}}
+.vid{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:rgba(255,255,255,.018);transition:border-color .2s;display:block}
+.vid:hover{border-color:var(--accent)}
+.vthumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--bg2)}
+.vthumb img{width:100%;height:100%;object-fit:cover;display:block}
+.vthumb .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.vthumb .play span{width:54px;height:54px;border-radius:50%;background:rgba(10,15,31,.72);display:flex;align-items:center;justify-content:center;transition:background .2s}
+.vid:hover .vthumb .play span{background:var(--accent)}
+.vthumb .play svg{width:22px;height:22px;fill:#fff;margin-left:3px}
+.vbody{padding:15px 18px}
+.vbody h3{font-size:17px;font-weight:600;margin-bottom:5px}
+.vbody p{color:var(--muted);font-size:13.5px}
+
 .gaming{background:var(--bg2);border:1px solid var(--line);border-radius:18px;padding:42px;display:grid;grid-template-columns:1.4fr 1fr;gap:32px;align-items:center}
 @media(max-width:780px){.gaming{grid-template-columns:1fr}}
 .gaming .trophy{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#ffd36b;font-weight:600;margin-bottom:13px}
