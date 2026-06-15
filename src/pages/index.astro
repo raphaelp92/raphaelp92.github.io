@@ -1,0 +1,155 @@
+---
+import Base from '../layouts/Base.astro';
+import cv from '../data/cv.json';
+
+const shortVenue = {
+  '10.1021/jacs.9b11829': 'JACS · 2020',
+  '10.1021/acs.jpcb.8b05936': 'J. Phys. Chem. B · 2018',
+  '10.1002/anie.201708233': 'Angew. Chem. · 2018',
+  '10.1021/acs.jpcb.7b02716': 'J. Phys. Chem. B · 2017',
+  '10.1063/1.4768765': 'AIP Conf. Proc. · 2012',
+};
+const publications = cv.publications ?? [];
+---
+<Base>
+<header><div class="wrap"><nav>
+  <div class="brand">Raphael<i>.</i></div>
+  <div class="navlinks">
+    <a class="hidem" href="#work">Work</a>
+    <a class="hidem" href="#projects">Projects</a>
+    <a class="hidem" href="#writing">Writing &amp; talks</a>
+    <a class="hidem" href="#gaming">Gaming</a>
+    <a class="hidem" href="#about">About</a>
+    <a class="btn nbtn" href="#contact">Get in touch</a>
+  </div>
+</nav></div></header>
+
+<div class="hero">
+  <div class="grid-bg"></div>
+  <div class="wrap">
+    <div class="eyebrow">Senior Data Scientist · AI &amp; Data Consultant</div>
+    <h1>I find the pattern underneath — and turn it into value.</h1>
+    <p class="lead">World Champion, PhD computational scientist, now building <b>enterprise AI</b> for energy. The throughline: rigour, performing under pressure, and shipping things people actually use.</p>
+    <div class="cta"><a class="btn b1" href="#work">View my work</a><a class="btn b2" href="#contact">Get in touch</a></div>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/raphael-peltzer-phd-71956390/" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"/></svg></a>
+      <a href="https://github.com/raphaelp92" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg></a>
+      <a href="https://twitch.tv/bunnyhoppor" aria-label="Twitch"><svg viewBox="0 0 24 24"><path d="M4 2 3 6v13h4v3h3l3-3h4l5-5V2H4m16 9-3 3h-4l-3 3v-3H7V4h13v7M14 7h-2v5h2V7m4 0h-2v5h2V7Z"/></svg></a>
+      <a href="https://x.com/TL_bunnyhoppor" aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.9 1.2h3.7l-8 9.1L24 22.8h-7.4l-5.8-7.6-6.6 7.6H.5l8.5-9.8L0 1.2h7.6l5.2 6.9 6.1-6.9m-1.3 19.4h2L6.5 3.3H4.3l13.3 17.3Z"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<section id="work"><div class="wrap">
+  <div class="sec-label">What I do</div>
+  <h2 class="sec-title">Enterprise AI, grounded in real data</h2>
+  <p class="sec-sub">I lead the data and retrieval side of production AI systems — turning large, messy, real-world data into secure, explainable answers inside the tools people already use.</p>
+  <div class="cards">
+    <div class="card">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3 2 8.5 12 14l10-5.5L12 3m0 8.2L5.3 7.5 12 4.2l6.7 3.3L12 11.2M2 11.5v5L12 22l10-5.5v-5L12 17 2 11.5Z"/></svg></div>
+      <h3>Enterprise RAG &amp; AI platforms</h3>
+      <p>End-to-end retrieval: ingestion, embeddings, indexing, retrieval tuning and prompt optimisation — with source traceability and access control built in.</p>
+      <div class="tags"><span class="tag">RAG</span><span class="tag">Azure OpenAI</span><span class="tag">Azure AI Search</span></div>
+    </div>
+    <div class="card">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3C7 3 3 4.8 3 7v10c0 2.2 4 4 9 4s9-1.8 9-4V7c0-2.2-4-4-9-4m7 14c0 .6-2.7 2-7 2s-7-1.4-7-2v-2.3c1.6 1 4.2 1.6 7 1.6s5.4-.6 7-1.6V17m0-5c0 .6-2.7 2-7 2s-7-1.4-7-2V9.7c1.6 1 4.2 1.6 7 1.6s5.4-.6 7-1.6V12M12 9C7.7 9 5 7.6 5 7s2.7-2 7-2 7 1.4 7 2-2.7 2-7 2Z"/></svg></div>
+      <h3>Data engineering on Azure</h3>
+      <p>Pipelines and platforms on Microsoft Fabric and OSDU — structured and unstructured data wrangled into something queryable at scale.</p>
+      <div class="tags"><span class="tag">Microsoft Fabric</span><span class="tag">OSDU</span><span class="tag">SQL</span></div>
+    </div>
+    <div class="card">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M5 19a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1c0-.6-.3-1-.7-1.4L14 13V6h1a1 1 0 0 0 0-2H9a1 1 0 0 0 0 2h1v7l-4.3 3.6c-.4.4-.7.8-.7 1.4m4.5-2 2.5-2.1 2.5 2.1h-5Z"/></svg></div>
+      <h3>A scientist's rigour</h3>
+      <p>A PhD in computational chemistry and four peer-reviewed papers — years of reducing complex systems to something you can reason about, applied to enterprise data.</p>
+      <div class="tags"><span class="tag">PhD</span><span class="tag">Simulation</span><span class="tag">Statistics</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <div class="sec-label">Selected work</div>
+  <h2 class="sec-title">Things I've built</h2>
+  <p class="sec-sub">A snapshot — growing as I publish more projects and write-ups.</p>
+
+  <div class="feature">
+    <div>
+      <div class="meta">Side project · Data viz</div>
+      <h3>Nasjonale prøver — school results explorer</h3>
+      <p>An interactive map that turns Norway's open national-test data into a decision tool: aggregate several years, filter by county, municipality, grade and subject, and see every school scored on the map, with a live top-list. I built it to support a real relocation decision.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">Data viz</span><span class="tag">Netlify</span></div>
+      <div class="note">Shown here for Tromsø · live demo kept private</div>
+    </div>
+    <div class="shot empty">
+      <img src="/projects/nasjonale-prover-tromso.png" alt="Nasjonale prøver explorer — Tromsø view" onerror="this.remove();this.closest('.shot').classList.add('empty')" />
+    </div>
+  </div>
+
+  <div class="work2">
+    <div class="card proj">
+      <div class="meta">Enterprise AI · 2025–present</div>
+      <h3>Talk to your OSDU data</h3>
+      <p>Led the data &amp; retrieval layer of an enterprise RAG platform giving natural-language access to large-scale subsurface data for a major energy operator — from a two-month proof of concept to enterprise-grade deployment, with traceability and document-level access control.</p>
+      <div class="tags"><span class="tag">RAG</span><span class="tag">OSDU</span><span class="tag">Microsoft Fabric</span><span class="tag">Azure OpenAI</span></div>
+    </div>
+    <div class="card proj">
+      <div class="meta">Talk &amp; publication · 2025</div>
+      <h3>DigX 2025 · First Break (EAGE)</h3>
+      <p>Presented “Secure, explainable answers inside enterprise workflows” at DigX 2025, with the work published in First Break (EAGE) — covering security, explainability and enterprise workflow integration.</p>
+      <div class="tags"><span class="tag">Speaking</span><span class="tag">Publication</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="writing"><div class="wrap">
+  <div class="sec-label">Writing &amp; talks</div>
+  <h2 class="sec-title">Speaking about the work</h2>
+  <p class="sec-sub">Talks, articles and peer-reviewed research.</p>
+  <div class="list">
+    <a class="row" href="#"><span class="t">Talk to Your OSDU Data — Secure, Explainable Answers Inside Enterprise Workflows</span><span class="v">DigX 2025 · First Break</span></a>
+    {publications.map((p) => (
+      <a class="row" href={`https://doi.org/${p.doi}`}><span class="t">{p.title}</span><span class="v">{shortVenue[p.doi] ?? p.year}</span></a>
+    ))}
+  </div>
+</div></section>
+
+<section id="gaming"><div class="wrap">
+  <div class="gaming">
+    <div>
+      <div class="trophy">Beyond the day job</div>
+      <h3>Hearthstone World Champion</h3>
+      <p>Before consulting, I spent five years as a professional esports competitor and founder of Peltzer Gaming AS — applying statistics, simulation and data-driven strategy to win at the highest level, while running the business side. I still stream occasionally.</p>
+      <div class="stat">
+        <div><div class="n">2022</div><div class="l">Individual World Champion</div></div>
+        <div><div class="n">Team</div><div class="l">World Champion &amp; MVP</div></div>
+        <div><div class="n">1000+</div><div class="l">streams</div></div>
+      </div>
+    </div>
+    <div style="text-align:center">
+      <a class="btn b2" href="https://twitch.tv/bunnyhoppor" style="margin:4px">Watch on Twitch</a>
+      <a class="btn b2" href="https://x.com/TL_bunnyhoppor" style="margin:4px">Follow on X</a>
+    </div>
+  </div>
+</div></section>
+
+<section id="about" class="about"><div class="wrap">
+  <div class="sec-label">About</div>
+  <h2 class="sec-title">One throughline, three chapters</h2>
+  <p>I'm a data scientist who doesn't stop at the technical side. What colleagues tend to single out is that I'm as comfortable with the business question and the bigger picture as with the model itself — and I work to keep the two connected.</p>
+  <p>That instinct is trained. A <b>PhD in computational chemistry</b> (Oslo) and an MSc (Oxford), four peer-reviewed publications, years of reducing messy systems to something you can reason about. Then five years at the very top of competitive Hearthstone — <b>World Champion in 2022</b> — which was data science in disguise: statistics and strategy under real pressure. Today I bring both to building <b>enterprise AI</b> for the energy sector at Cegal.</p>
+</div></section>
+
+<footer id="contact"><div class="wrap">
+  <div class="footrow">
+    <div>
+      <div style="font-family:var(--grot);font-weight:600;color:var(--txt);font-size:16px;margin-bottom:4px">Let's talk.</div>
+      <div>Oslo, Norway · AI, RAG, data &amp; science — or the occasional game.</div>
+    </div>
+    <div class="socials">
+      <a href="mailto:raphaelpeltzer@googlemail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2m0 4-8 5-8-5V6l8 5 8-5v2Z"/></svg></a>
+      <a href="https://www.linkedin.com/in/raphael-peltzer-phd-71956390/" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"/></svg></a>
+      <a href="https://github.com/raphaelp92" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg></a>
+    </div>
+  </div>
+  <div style="margin-top:22px;font-size:13px;opacity:.55">© 2026 Raphael Peltzer · Built with Astro</div>
+</div></footer>
+</Base>

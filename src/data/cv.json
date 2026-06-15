@@ -1,0 +1,44 @@
+{
+  "publications": [
+    {
+      "authors": "R. M. Peltzer, J. Gauss, O. Eisenstein, M. Cascella",
+      "title": "The Grignard Reaction – Unraveling a Chemical Puzzle",
+      "venue": "Journal of the American Chemical Society",
+      "citation": "J. Am. Chem. Soc. 2020, 142 (6), 2984–2994",
+      "year": 2020,
+      "doi": "10.1021/jacs.9b11829"
+    },
+    {
+      "authors": "R. M. Peltzer, H. B. Kolli, A. Stocker, M. Cascella",
+      "title": "Self-Assembly of α-Tocopherol Transfer Protein Nanoparticles: A Patchy Protein Model",
+      "venue": "The Journal of Physical Chemistry B",
+      "citation": "J. Phys. Chem. B 2018, 122 (28), 7066–7072",
+      "year": 2018,
+      "doi": "10.1021/acs.jpcb.8b05936"
+    },
+    {
+      "authors": "S. Supekar, A. C. Papageorgiou, G. Gemmecker, R. M. Peltzer, M. P. Johansson, K. Tripsianes, M. Sattler, V. R. I. Kaila",
+      "title": "Conformational Selection of Dimethylarginine Recognition by the Survival Motor Neuron Tudor Domain",
+      "venue": "Angewandte Chemie International Edition",
+      "citation": "Angew. Chem. Int. Ed. 2018, 57 (2), 486–490",
+      "year": 2018,
+      "doi": "10.1002/anie.201708233"
+    },
+    {
+      "authors": "R. M. Peltzer, O. Eisenstein, A. Nova, M. Cascella",
+      "title": "How Solvent Dynamics Controls the Schlenk Equilibrium of Grignard Reagents: A Computational Study of CH3MgCl in Tetrahydrofuran",
+      "venue": "The Journal of Physical Chemistry B",
+      "citation": "J. Phys. Chem. B 2017, 121 (16), 4226–4237",
+      "year": 2017,
+      "doi": "10.1021/acs.jpcb.7b02716"
+    },
+    {
+      "authors": "Co-authored (incl. R. M. Peltzer)",
+      "title": "Turbulence properties associated with interplanetary shock waves",
+      "venue": "AIP Conference Proceedings",
+      "citation": "AIP Conf. Proc. 2012, 1500, 192",
+      "year": 2012,
+      "doi": "10.1063/1.4768765"
+    }
+  ]
+}
